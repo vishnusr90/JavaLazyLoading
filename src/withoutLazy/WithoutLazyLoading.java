@@ -10,6 +10,7 @@ public class WithoutLazyLoading {
         int x = 4;
         int temp = evaluate(x);
 
+        // temp will be calculated even if the first condition fails
         if(x > 5 && temp > 10) {
             System.out.println("Path 1");
         } else {
